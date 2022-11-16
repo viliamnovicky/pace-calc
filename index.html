@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script async src="https://cse.google.com/cse.js?cx=ed4af7b76e434d47f"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="photo">
+        <div class="container">
+            <div class="cont" id = "speed-calc">
+                <h1>RÝCHLOSŤ <i class="fas fa-hand-point-right"></i> TEMPO</h1>
+                <label for="speed">zadaj rýchlosť (km/h)</label>
+                <input id = "speed-input" type="number" value = 0>
+                <button class = "btn" id = "calc-tempo">Vypočítaj tempo</button>
+                <p id="tempo">...</p>
+            </div>
+            <div class="cont" id = "tempo-calc">
+                <h1>TEMPO <i class="fas fa-hand-point-right"></i> RÝCHLOSŤ</h1>
+                <label for="tempo">zadaj tempo (min/km)</label>
+                <div id = "tempo-input">
+                    <input class = "input-small" id = "tempo-min" type="number" value = 00>
+                    <p>:</p>
+                    <input class = "input-small" id = "tempo-sec" type="number" value = 00>
+                </div>
+                <button class = "btn" id = "calc-speed">Vypočítaj rýchlosť</button>
+                <p id="speed">...</p>
+            </div>
+            <div class="cont" id = "tempo-calc">
+                <h1>AKO TO MÁM NAKOPNÚŤ?</h1>
+                <label for="distance">zadaj vzdialenosť (km)</label>
+                <input id = "dist-input" type="number" value = 0>
+                <label for="tempo">zadaj želaný čas</label>
+                <div id = "tempo-input">
+                    <input class = "input-small" id = "dist-tempo-hr" type="number" value = 00>
+                    <p>:</p>
+                    <input class = "input-small" id = "dist-tempo-min" type="number" value = 00>
+                    <p>:</p>
+                    <input class = "input-small" id = "dist-tempo-sec" type="number" value = 00>
+                </div>
+                <button class = "btn" id = "calc-race-pace">Vypočítaj rýchlosť</button>
+                <p id="race-speed">...</p>
+                <p id="race-pace">...</p>
+            </div>
+            <div class="cont" id = "elev-calc">
+                <h1>PRIEMERNÝ SKLON KOPCA</h1>
+                <label for="dist-elev">zadaj vzdialenosť (km)</label>
+                <input id = "dist-elev" type="number" value = 0>
+                <label for="elev">zadaj prevýšenie (m)</label>
+                <input id = "elev" type="number" value = 0>
+                <button class = "btn" id = "calc-elev">Vypočítaj sklon</button>
+                <p id="super-elev">...</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/0382ce9e52.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
